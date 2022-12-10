@@ -1,0 +1,31 @@
+<meta charset="UTF-8">
+<script>
+    function pulalinha() {
+        document.write("<br>");
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulalinha();
+    }
+
+    var nome = prompt("Olá como se chama?");
+    var numeroSorteado = Math.round(Math.random() * 10);
+    console.log(numeroSorteado);
+    var tentativas = 1;
+    while (tentativas <= 3) {
+        var chute = parseInt(prompt(nome + " Por favor escolha um numero de 0 à 10."));
+        if (chute == numeroSorteado) {
+            mostra("Parabens " + nome + "! Você acertou. O numero sorteado é exatamente o " + numeroSorteado);
+            break;
+        } else {
+            mostra("Que pena você errou, o numero sorteado é o " + numeroSorteado);
+        }
+
+        tentativas;
+
+    }
+
+
+</script>

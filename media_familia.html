@@ -1,0 +1,30 @@
+<meta charset="UTF-8">
+<script>
+    function pulalinha() {
+        document.write("<br>");
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulalinha();
+    }
+
+
+    var totalFamiliares = parseInt(prompt("Quantos familiares vivem com você?"));
+    var contador = 1;
+    var total_idades = 0;
+
+    while(contador <= totalFamiliares) {
+        var idades = parseInt(prompt("Digite a idade dos membros da sua familia."));
+        total_idades = total_idades + idades;
+        contador++;
+    }
+
+    var mediaIdades = total_idades / totalFamiliares;
+    mostra("Média de idade dos familiares: " + mediaIdades);
+    pulalinha()
+    mostra("Fim");
+
+
+</script>
